@@ -1,1 +1,2 @@
-# silex_substance_painter
+# Silex Maya
+Python library to execute actions on Maya

@@ -1,0 +1,16 @@
+save:
+  shelf: "build"
+  hide: true
+  thumbnail: "save.svg"
+
+  steps:
+    save:
+      label: "Save"
+      index: 50
+      commands:
+        build_work_path:
+          path: "silex_client.commands.build_work_path.BuildWorkPath"
+        save_scene:
+          path: "silex.substancePainter.commands.save.Save"
+          parameters:
+            file_paths: !command-output "save:build_work_path"
